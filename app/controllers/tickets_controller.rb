@@ -35,6 +35,7 @@ class TicketsController < ApplicationController
   # GET /tickets/1/edit
   def edit
     @ticket = Ticket.find(params[:id])
+    @people = Person.all
   end
 
   # POST /tickets
